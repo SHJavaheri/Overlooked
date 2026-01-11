@@ -1,0 +1,29 @@
+{
+  "item.overlooked.resonite": "Resonite",
+  "item.overlooked.raw_resonite": "Raw Resonite",
+  "item.overlooked.chisel": "Chisel",
+  "item.overlooked.resonating_apple": "Resonating Apple",
+  "item.overlooked.resonant_fragment": "A Resonant Fragment",
+
+  "block.overlooked.resonant_ore": "Resonant Ore",
+  "block.overlooked.resonant_deepslate_ore": "Deepslate Resonant Ore",
+  "block.overlooked.resonant_block": "Block of Resonant",
+  "block.overlooked.resonating_block": "Resonating Block",
+
+  "creativetab.overlooked.resonant_items": "Resonant Items",
+  "creativetab.overlooked.resonant_blocks": "Resonant Blocks",
+  "creativetab.overlooked.overlooked_tools": "Overlooked Tools",
+
+
+
+  "tooltip.overlooked.resonant_fragment": "",
+  "tooltip.overlooked.resonating_block.tooltip": "Certain items may §9resonate§r when placed on top of this block...",
+  "tooltip.overlooked.chisel.shift_down": "This item is a chisel... pretty self explanatory",
+  "tooltip.overlooked.chisel": "Press §eShift§r for more information",
+  "tooltip.overlooked.resonating_apple": "A golden apple, enchanted with §9resonance§r",
+  "tooltip.overlooked.resonite": "A resonite ingot",
+  "tooltip.overlooked.raw_resonite": "You really need an explanation for this?",
+  "tooltip.overlooked.resonant_ore": "Shouldn't need to explain",
+  "tooltip.overlooked.resonant_deepslate_ore": "Take a guess",
+  "tooltip.overlooked.resonant_block": "Put 9 Resonite ingots together, and you get this"
+}

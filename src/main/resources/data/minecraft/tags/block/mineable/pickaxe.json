@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "overlooked:resonant_block",
+    "overlooked:resonant_ore",
+    "overlooked:resonant_deepslate_ore"
+  ]
+}
