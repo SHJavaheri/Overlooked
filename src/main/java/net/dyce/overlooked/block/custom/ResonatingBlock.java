@@ -4,6 +4,7 @@ import java.util.List;
 
 import net.dyce.overlooked.block.ModBlocks;
 import net.dyce.overlooked.item.ModItems;
+import net.dyce.overlooked.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
@@ -36,7 +37,7 @@ public class ResonatingBlock extends Block {
     @Override
     public void stepOn(Level pLevel, BlockPos pPos, BlockState pState, Entity pEntity) {
         if (pEntity instanceof ItemEntity itemEntity) {
-            if(itemEntity.getItem().getItem() == Items.BLAZE_POWDER) {
+            if(isValidItem(itemEntity.getItem())) {
                 itemEntity.setItem(new ItemStack(Items.BLAZE_ROD, itemEntity.getItem().getCount()));
             }
             if(itemEntity.getItem().getItem() == Items.COBBLESTONE) {
@@ -74,6 +75,10 @@ public class ResonatingBlock extends Block {
         }
 
         super.stepOn(pLevel, pPos, pState, pEntity);
+    }
+
+    private boolean isValidItem(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     @Override
