@@ -38,7 +38,7 @@ public class ResonatingBlock extends Block {
     public void stepOn(Level pLevel, BlockPos pPos, BlockState pState, Entity pEntity) {
         if (pEntity instanceof ItemEntity itemEntity) {
             if(isValidItem(itemEntity.getItem())) {
-                itemEntity.setItem(new ItemStack(Items.BLAZE_ROD, itemEntity.getItem().getCount()));
+                itemEntity.setItem(new ItemStack(ModItems.RESONANT_FRAGMENT.get(), itemEntity.getItem().getCount()));
             }
             if(itemEntity.getItem().getItem() == Items.COBBLESTONE) {
                 itemEntity.setItem(new ItemStack(Items.STONE, itemEntity.getItem().getCount()));
