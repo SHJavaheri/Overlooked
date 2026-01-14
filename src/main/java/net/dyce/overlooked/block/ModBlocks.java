@@ -5,6 +5,7 @@ import java.util.function.Supplier;
 
 import net.dyce.overlooked.Overlooked;
 import net.dyce.overlooked.block.custom.ResonatingBlock;
+import net.dyce.overlooked.block.custom.ResonatingLampBlock;
 import net.dyce.overlooked.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -25,6 +26,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Overlooked.MOD_ID);
 
+    // Ores
     public static final RegistryObject<Block> RESONANT_ORE = registerBlock("resonant_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),BlockBehaviour.Properties.of()
                      .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)) {
@@ -45,6 +47,8 @@ public class ModBlocks {
                 }
             });
 
+
+    // Custom Blocks
     public static final RegistryObject<Block> RESONANT_BLOCK = registerBlock("resonant_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)) {
@@ -55,8 +59,18 @@ public class ModBlocks {
                 }
             });
 
+
+    // Custom Blocks with Properties
     public static final RegistryObject<Block> RESONATING_BLOCK =registerBlock("resonating_block",
             () -> new ResonatingBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> RESONATING_LAMP = registerBlock("resonating_lamp",
+            () -> new ResonatingLampBlock(BlockBehaviour.Properties.of().strength(3f)
+                    .lightLevel(state -> state.getValue(ResonatingLampBlock.CLICKED) ? 15 : 0).sound(SoundType.GLASS)));
+
+
+
+
 
 
 

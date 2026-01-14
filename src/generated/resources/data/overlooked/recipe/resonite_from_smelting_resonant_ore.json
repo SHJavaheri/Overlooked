@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "resonite",
+  "ingredient": {
+    "item": "overlooked:resonant_ore"
+  },
+  "result": {
+    "id": "overlooked:resonite"
+  }
+}

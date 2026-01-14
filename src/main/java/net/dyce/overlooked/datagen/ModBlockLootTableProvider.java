@@ -28,9 +28,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        // Self Drops
         dropSelf(ModBlocks.RESONANT_BLOCK.get());
         dropSelf(ModBlocks.RESONATING_BLOCK.get());
+        dropSelf(ModBlocks.RESONATING_LAMP.get());
 
+
+        // Drops Something Else
         this.add(ModBlocks.RESONANT_ORE.get(),
                 block -> createOreDrop(ModBlocks.RESONANT_ORE.get(), ModItems.RAW_RESONITE.get()));
         this.add(ModBlocks.RESONANT_DEEPSLATE_ORE.get(),

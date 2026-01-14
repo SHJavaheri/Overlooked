@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_resonant_fragment": {
+      "conditions": {
+        "items": [
+          {
+            "items": "overlooked:resonant_fragment"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "overlooked:chisel_frag_left_stick"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_resonant_fragment"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "overlooked:chisel_frag_left_stick"
+    ]
+  }
+}

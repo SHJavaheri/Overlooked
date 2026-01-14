@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RESONANT_DEEPSLATE_ORE.get());
                         output.accept(ModBlocks.RESONANT_BLOCK.get());
                         output.accept(ModBlocks.RESONATING_BLOCK.get());
+                        output.accept(ModBlocks.RESONATING_LAMP.get());
 
                     }).build());
 

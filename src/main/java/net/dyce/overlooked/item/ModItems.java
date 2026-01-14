@@ -18,6 +18,8 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Overlooked.MOD_ID);
 
+
+    // Standard Items
     public static final RegistryObject<Item> RESONITE = ITEMS.register("resonite",
             () -> new Item(new Item.Properties()) {
                 @Override
@@ -36,10 +38,6 @@ public class ModItems {
                 }
             });
 
-
-    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
-            () -> new ChiselItem(new Item.Properties().durability(32)));
-
     public static final RegistryObject<Item> RESONATING_APPLE = ITEMS.register("resonating_apple",
             () -> new Item(new Item.Properties().food(ModFoodProperties.RESONATING_APPLE)) {
                 @Override
@@ -49,6 +47,13 @@ public class ModItems {
                 }
             });
 
+
+    // Custom Items (Items with abilities
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(32)));
+
+
+    // Fuel Items
     public static final RegistryObject<Item> RESONANT_FRAGMENT = ITEMS.register("resonant_fragment",
                 () -> new FuelItem(new Item.Properties(), 5000) {
                     @Override

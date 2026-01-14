@@ -86,6 +86,8 @@ public class Overlooked {
 
         if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.RESONATING_BLOCK);
+            event.accept(ModBlocks.RESONATING_LAMP);
+            event.accept(ModItems.RESONANT_FRAGMENT);
         }
     }
 

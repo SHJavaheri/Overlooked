@@ -5,10 +5,15 @@
   "item.overlooked.resonating_apple": "Resonating Apple",
   "item.overlooked.resonant_fragment": "A Resonant Fragment",
 
+
+
   "block.overlooked.resonant_ore": "Resonant Ore",
   "block.overlooked.resonant_deepslate_ore": "Deepslate Resonant Ore",
   "block.overlooked.resonant_block": "Block of Resonant",
   "block.overlooked.resonating_block": "Resonating Block",
+  "block.overlooked.resonating_lamp": "Resonating Lamp",
+
+
 
   "creativetab.overlooked.resonant_items": "Resonant Items",
   "creativetab.overlooked.resonant_blocks": "Resonant Blocks",
@@ -25,5 +30,6 @@
   "tooltip.overlooked.raw_resonite": "You really need an explanation for this?",
   "tooltip.overlooked.resonant_ore": "Shouldn't need to explain",
   "tooltip.overlooked.resonant_deepslate_ore": "Take a guess",
-  "tooltip.overlooked.resonant_block": "Put 9 Resonite ingots together, and you get this"
+  "tooltip.overlooked.resonant_block": "You wouldn't believe me if I told you what this was..",
+  "tooltip.overlooked.resonating_lamp.tooltip": "lamp"
 }
