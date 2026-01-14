@@ -6,8 +6,13 @@ import net.dyce.overlooked.Overlooked;
 import net.dyce.overlooked.item.custom.ChiselItem;
 import net.dyce.overlooked.item.custom.FuelItem;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -63,6 +68,22 @@ public class ModItems {
                     }
                 });
 
+    // Custom Tools
+    public static final RegistryObject<Item> RESONITE_SWORD = ITEMS.register("resonite_sword",
+            () -> new SwordItem(ModToolTiers.RESONITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.RESONITE, 3, -2.4f))));
+    public static final RegistryObject<Item> RESONITE_PICKAXE = ITEMS.register("resonite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.RESONITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.RESONITE, 1, -2.8f))));
+    public static final RegistryObject<Item> RESONITE_SHOVEL = ITEMS.register("resonite_shovel",
+            () -> new ShovelItem(ModToolTiers.RESONITE, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.RESONITE, 1.5f, -3.0f))));
+    public static final RegistryObject<Item> RESONITE_AXE = ITEMS.register("resonite_axe",
+            () -> new AxeItem(ModToolTiers.RESONITE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.RESONITE, 6, -3.2f))));
+    public static final RegistryObject<Item> RESONITE_HOE = ITEMS.register("resonite_hoe",
+            () -> new HoeItem(ModToolTiers.RESONITE, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.RESONITE, 0, -3.0f))));
 
 
     public static void register(IEventBus eventBus) {

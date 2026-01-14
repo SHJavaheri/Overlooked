@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_resonant_fragment": {
+    "has_resonite": {
       "conditions": {
         "items": [
           {
-            "items": "overlooked:resonant_fragment"
+            "items": "overlooked:resonite"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "overlooked:hisel_frag_over_stick"
+        "recipe": "overlooked:resonite_axe_from_resonite_r"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_resonant_fragment"
+      "has_resonite"
     ]
   ],
   "rewards": {
     "recipes": [
-      "overlooked:hisel_frag_over_stick"
+      "overlooked:resonite_axe_from_resonite_r"
     ]
   }
 }

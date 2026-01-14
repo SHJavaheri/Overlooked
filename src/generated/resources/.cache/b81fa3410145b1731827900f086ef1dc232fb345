@@ -1,6 +1,11 @@
-// 1.21	2026-01-12T15:31:37.4470349	Item Models: overlooked
+// 1.21	2026-01-14T01:02:13.6031304	Item Models: overlooked
 8a2adf9a6ada21812bb0a46f62bdcc42c372d4b4 assets/overlooked/models/item/chisel.json
 62568e2f70efe8b9f0e00469f812d778ef064f0c assets/overlooked/models/item/raw_resonite.json
 26ffd3bc6d0eee8392d3b55fadb62d2b9011dff3 assets/overlooked/models/item/resonant_fragment.json
 8b745d377c42e5031f0904dfb7a56bd551b8dc03 assets/overlooked/models/item/resonating_apple.json
 269d491c336bf8de657d7cd168a2eff19c363981 assets/overlooked/models/item/resonite.json
+82cc45b9fb1576488f0c58c33a04014a80c7fefe assets/overlooked/models/item/resonite_axe.json
+490f0c7dfd12f87aab591fa5d48519ca83b96fd6 assets/overlooked/models/item/resonite_hoe.json
+accd86fbbf152a45af115d830025387ac26ce7a6 assets/overlooked/models/item/resonite_pickaxe.json
+9c3b27b4d038c8b004ae08576b8e5a926238ab0f assets/overlooked/models/item/resonite_shovel.json
+d737feff07b4f9ba5c65601ca7d9b608271c278d assets/overlooked/models/item/resonite_sword.json

@@ -1,3 +1,5 @@
-// 1.21	2026-01-12T15:55:38.6603191	Tags for minecraft:block mod id overlooked
+// 1.21	2026-01-14T01:02:13.6046357	Tags for minecraft:block mod id overlooked
 9f576dcf17f956562e4a9c9385f3568dc0b5a969 data/minecraft/tags/block/mineable/pickaxe.json
 9f576dcf17f956562e4a9c9385f3568dc0b5a969 data/minecraft/tags/block/needs_diamond_tool.json
+128a4231e0518a8824ca5d04d386a627622e2455 data/overlooked/tags/block/incorrect_for_resonite_tool.json
+160d22e911a3ab54cb4d54f35418f6f96f192267 data/overlooked/tags/block/needs_resonite_tool.json

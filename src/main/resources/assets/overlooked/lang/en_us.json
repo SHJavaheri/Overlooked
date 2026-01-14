@@ -5,6 +5,13 @@
   "item.overlooked.resonating_apple": "Resonating Apple",
   "item.overlooked.resonant_fragment": "A Resonant Fragment",
 
+  "item.overlooked.resonite_sword": "§eResonite Sword§r",
+  "item.overlooked.resonite_pickaxe": "§eResonite Pickaxe§r",
+  "item.overlooked.resonite_shovel": "§eResonite Shovel§r",
+  "item.overlooked.resonite_axe": "§eResonite Axe§r",
+  "item.overlooked.resonite_hoe": "§eResonite H-Word§r",
+
+
 
 
   "block.overlooked.resonant_ore": "Resonant Ore",
@@ -15,9 +22,11 @@
 
 
 
+
   "creativetab.overlooked.resonant_items": "Resonant Items",
   "creativetab.overlooked.resonant_blocks": "Resonant Blocks",
   "creativetab.overlooked.overlooked_tools": "Overlooked Tools",
+
 
 
 

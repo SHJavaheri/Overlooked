@@ -1,0 +1,11 @@
+{
+  "values": [
+    "overlooked:resonant_block",
+    "overlooked:resonant_ore",
+    "overlooked:resonant_deepslate_ore",
+    "overlooked:resonating_block",
+    "minecraft:obsidian",
+    "minecraft:crying_obsidian",
+    "#minecraft:needs_diamond_tool"
+  ]
+}

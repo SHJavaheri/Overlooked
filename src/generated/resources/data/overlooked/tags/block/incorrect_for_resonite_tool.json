@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#overlooked:needs_resonite_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_diamond_tool"
+  ]
+}

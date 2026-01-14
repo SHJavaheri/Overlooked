@@ -45,6 +45,12 @@ public class ModCreativeModeTabs {
                                  .title(Component.translatable("creativetab.overlooked.overlooked_tools"))
                                  .displayItems((itemDisplayParameters, output) -> {
                                      output.accept(ModItems.CHISEL.get());
+                                     output.accept(ModItems.RESONITE_SWORD.get());
+                                     output.accept(ModItems.RESONITE_PICKAXE.get());
+                                     output.accept(ModItems.RESONITE_SHOVEL.get());
+                                     output.accept(ModItems.RESONITE_AXE.get());
+                                     output.accept(ModItems.RESONITE_HOE.get());
+
                                  }).build());
 
 

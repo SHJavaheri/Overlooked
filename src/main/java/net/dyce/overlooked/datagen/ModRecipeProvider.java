@@ -36,7 +36,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ModBlocks.RESONANT_DEEPSLATE_ORE.get());
         //----------------------------------------------------------------------------//
 
-        // Shaped Recipes
+// Shaped Recipes
+        // Blocks
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RESONANT_BLOCK.get())
                 .pattern("AAA")
                 .pattern("AAA")
@@ -60,14 +61,79 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X', Items.REDSTONE_LAMP)
                 .unlockedBy(getHasName(ModItems.RESONANT_FRAGMENT.get()), has(ModItems.RESONANT_FRAGMENT.get())).save(pRecipeOutput);
 
-        // CHISEL RECIPE //
+        // Tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RESONITE_SWORD.get())
+                           .pattern("A")
+                           .pattern("A")
+                           .pattern("B")
+                           .define('A', ModItems.RESONITE.get())
+                           .define('B', Items.STICK)
+                           .unlockedBy(getHasName(ModItems.RESONITE.get()), has(ModItems.RESONITE.get()))
+                           .save(pRecipeOutput, Overlooked.MOD_ID + ":resonite_sword_from_resonite");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RESONITE_PICKAXE.get())
+                           .pattern("AAA")
+                           .pattern(" B ")
+                           .pattern(" B ")
+                           .define('A', ModItems.RESONITE.get())
+                           .define('B', Items.STICK)
+                           .unlockedBy(getHasName(ModItems.RESONITE.get()), has(ModItems.RESONITE.get()))
+                           .save(pRecipeOutput, Overlooked.MOD_ID + ":resonite_pickaxe_from_resonite");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RESONITE_SHOVEL.get())
+                           .pattern("A")
+                           .pattern("B")
+                           .pattern("B")
+                           .define('A', ModItems.RESONITE.get())
+                           .define('B', Items.STICK)
+                           .unlockedBy(getHasName(ModItems.RESONITE.get()), has(ModItems.RESONITE.get()))
+                           .save(pRecipeOutput, Overlooked.MOD_ID + ":resonite_shovel_from_resonite");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RESONITE_AXE.get())
+                           .pattern("AA ")
+                           .pattern("AB ")
+                           .pattern(" B ")
+                           .define('A', ModItems.RESONITE.get())
+                           .define('B', Items.STICK)
+                           .unlockedBy(getHasName(ModItems.RESONITE.get()), has(ModItems.RESONITE.get()))
+                           .save(pRecipeOutput, Overlooked.MOD_ID + ":resonite_axe_from_resonite_l");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RESONITE_AXE.get())
+                           .pattern(" AA")
+                           .pattern(" BA")
+                           .pattern(" B ")
+                           .define('A', ModItems.RESONITE.get())
+                           .define('B', Items.STICK)
+                           .unlockedBy(getHasName(ModItems.RESONITE.get()), has(ModItems.RESONITE.get()))
+                           .save(pRecipeOutput, Overlooked.MOD_ID + ":resonite_axe_from_resonite_r");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RESONITE_HOE.get())
+                           .pattern("AA ")
+                           .pattern(" B ")
+                           .pattern(" B ")
+                           .define('A', ModItems.RESONITE.get())
+                           .define('B', Items.STICK)
+                           .unlockedBy(getHasName(ModItems.RESONITE.get()), has(ModItems.RESONITE.get()))
+                           .save(pRecipeOutput, Overlooked.MOD_ID + ":resonite_hoe_from_resonite_l");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RESONITE_HOE.get())
+                           .pattern(" AA")
+                           .pattern(" B ")
+                           .pattern(" B ")
+                           .define('A', ModItems.RESONITE.get())
+                           .define('B', Items.STICK)
+                           .unlockedBy(getHasName(ModItems.RESONITE.get()), has(ModItems.RESONITE.get()))
+                           .save(pRecipeOutput, Overlooked.MOD_ID + ":resonite_hoe_from_resonite_r");
+
+
+                // CHISEL RECIPE //
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CHISEL.get())
                            .pattern("A")
                            .pattern("B")
                            .define('A', ModItems.RESONANT_FRAGMENT.get())
                            .define('B', Items.STICK)
                            .unlockedBy(getHasName(ModItems.RESONANT_FRAGMENT.get()), has(ModItems.RESONANT_FRAGMENT.get()))
-                           .save(pRecipeOutput, Overlooked.MOD_ID + ":hisel_frag_over_stick");
+                           .save(pRecipeOutput, Overlooked.MOD_ID + ":chisel_frag_over_stick");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CHISEL.get())
                            .pattern("A")
@@ -95,7 +161,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //----------------------------------------------------------------------------//
 
-        // Shapeless Recipes
+// Shapeless Recipes
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RESONITE.get(),9)
                 .requires(ModBlocks.RESONANT_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.RESONANT_BLOCK.get()), has(ModBlocks.RESONANT_BLOCK.get())).save(pRecipeOutput);
@@ -106,7 +172,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //----------------------------------------------------------------------------//
 
-        // Smelting Recipes
+// Smelting Recipes
         oreSmelting(pRecipeOutput, RESONITE_SMELTABLES, RecipeCategory.MISC, ModItems.RESONITE.get(), 1.0f, 200, "resonite");
         oreBlasting(pRecipeOutput, RESONITE_SMELTABLES, RecipeCategory.MISC, ModItems.RESONITE.get(), 1.0f, 100, "resonite");
 
